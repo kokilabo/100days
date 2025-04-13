@@ -2,7 +2,7 @@
 
 Reactで作成されたシンプルなメモアプリです。Firebaseを使用してデータを保存します。
 
-![siteimage](/memo-002.png)
+![siteimage](memo-002.png)
 
 ## セットアップ
 
