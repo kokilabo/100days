@@ -1,0 +1,190 @@
+/* ベース設定 */
+body {
+  font-family: 'Segoe UI', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f8f9fa;
+  color: #222;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+/* ヘッダー */
+header {
+  background: #005bac;
+  color: #fff;
+  padding: 16px 0;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+  letter-spacing: 0.1em;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0 0 0;
+  display: flex;
+  gap: 24px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: opacity 0.2s;
+}
+
+nav a:hover {
+  opacity: 0.7;
+}
+
+/* メインビジュアル */
+#main-visual {
+  background: linear-gradient(120deg, #e3f0ff 0%, #f8f9fa 100%);
+  text-align: center;
+  padding: 64px 0 48px 0;
+}
+
+#main-visual h2 {
+  font-size: 2.2rem;
+  margin-bottom: 12px;
+}
+
+#main-visual p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* サービス */
+#services {
+  background: #fff;
+  border-radius: 8px;
+  margin: 32px 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.service-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.service-item {
+  flex: 1 1 220px;
+  background: #f3f7fb;
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+  text-align: center;
+}
+
+.service-item h3 {
+  margin-top: 0;
+  color: #005bac;
+}
+
+/* 会社概要 */
+#about table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 16px;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+}
+
+#about th, #about td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #e0e0e0;
+  text-align: left;
+}
+
+#about th {
+  background: #f3f7fb;
+  width: 120px;
+}
+
+/* お問い合わせ */
+#contact form {
+  background: #fff;
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+#contact label {
+  font-weight: bold;
+}
+
+#contact input,
+#contact textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#contact textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+#contact button {
+  background: #005bac;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 12px 0;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+#contact button:hover {
+  opacity: 0.8;
+}
+
+#form-message {
+  margin-top: 12px;
+  color: #005bac;
+  font-weight: bold;
+}
+
+/* フッター */
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 16px 0;
+  margin-top: 40px;
+  font-size: 0.95rem;
+}
+
+/* レスポンシブ */
+@media (max-width: 700px) {
+  .service-list {
+    flex-direction: column;
+  }
+  header h1 {
+    font-size: 1.3rem;
+  }
+  #main-visual h2 {
+    font-size: 1.3rem;
+  }
+}

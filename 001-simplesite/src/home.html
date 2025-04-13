@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>サンプル株式会社</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>サンプル株式会社</h1>
+      <nav>
+        <ul>
+          <li><a href="home.html">ホーム</a></li>
+          <li><a href="services.html">サービス</a></li>
+          <li><a href="company-profile.html">会社概要</a></li>
+          <li><a href="#contact">お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="main-visual">
+    <div class="container">
+      <h2>あなたのビジネスをサポートします</h2>
+      <p>信頼と実績のサンプル株式会社</p>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="container">
+      <h2>サービス</h2>
+      <div class="service-list">
+        <div class="service-item">
+          <h3>Web制作</h3>
+          <p>高品質なWebサイトを制作します。</p>
+        </div>
+        <div class="service-item">
+          <h3>ITコンサルティング</h3>
+          <p>IT導入や運用をサポートします。</p>
+        </div>
+        <div class="service-item">
+          <h3>システム開発</h3>
+          <p>業務効率化のためのシステムを開発します。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <h2>会社概要</h2>
+      <table>
+        <tr><th>会社名</th><td>サンプル株式会社</td></tr>
+        <tr><th>所在地</th><td>東京都千代田区1-2-3</td></tr>
+        <tr><th>設立</th><td>2020年1月1日</td></tr>
+        <tr><th>代表者</th><td>山田 太郎</td></tr>
+      </table>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2>お問い合わせ</h2>
+      <form id="contact-form">
+        <label for="name">お名前</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">メールアドレス</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">お問い合わせ内容</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit">送信</button>
+      </form>
+      <div id="form-message"></div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <small>&copy; 2025 サンプル株式会社</small>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
