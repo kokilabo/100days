@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>お問い合わせ | サンプル株式会社</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>サンプル株式会社</h1>
+      <nav>
+        <ul>
+          <li><a href="home.html">ホーム</a></li>
+          <li><a href="service.html">サービス</a></li>
+          <li><a href="company-profile.html">会社概要</a></li>
+          <li><a href="contact.html">お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="contact">
+      <div class="container">
+        <h2>お問い合わせ</h2>
+        <form id="contact-form">
+          <label for="name">お名前</label>
+          <input type="text" id="name" name="name" required>
+          <label for="email">メールアドレス</label>
+          <input type="email" id="email" name="email" required>
+          <label for="message">お問い合わせ内容</label>
+          <textarea id="message" name="message" required></textarea>
+          <button type="submit">送信</button>
+        </form>
+        <div id="form-message"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <small>&copy; 2025 サンプル株式会社</small>
+    </div>
+  </footer>
+  <script src="../script.js"></script>
+</body>
+</html>
