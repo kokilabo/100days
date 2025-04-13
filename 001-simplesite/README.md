@@ -4,6 +4,8 @@
 このプロジェクトは、シンプルな企業サイトのサンプルです。  
 HTML・CSS・JavaScriptのみで構成されており、静的なWebサイトとしてすぐに利用できます。
 
+! [siteimage] (001-simplesite/src/image/site.png) 
+
 ## ディレクトリ構成
 ```
 001-simplesite/
