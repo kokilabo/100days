@@ -22,6 +22,10 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-
 # devcontainer
 .devcontainer/
+
+# Firebase Hosting cache
+.firebase/hosting.*.cache
+
+memo-002.png
