@@ -53,6 +53,7 @@ function App() {
         });
       } else {
         // 新規作成
+        // eslint-disable-next-line no-unused-vars
         newMemoRef = await addDoc(collection(db, "memos"), {
           title: memo.title,
           content: memo.content,
@@ -95,6 +96,7 @@ const toggleSidebar = () => {
 };
 
 
+  // eslint-disable-next-line no-unused-vars
   const handleDeleteAll = async () => {
     if (!window.confirm('すべてのメモを削除してもよろしいですか？')) {
       return;
