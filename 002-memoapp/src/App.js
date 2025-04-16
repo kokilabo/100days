@@ -8,7 +8,7 @@ import './App.css';
 
 function App() {
   const [memos, setMemos] = useState([]);
-  const [currentMemo, setCurrentMemo] = useState(null);
+  const [currentMemo, setCurrentMemo] = useState({});
   const [isSelectionMode, setIsSelectionMode] = useState(false);
   const [selectedMemos, setSelectedMemos] = useState([]);
   const [isSidebarOpen, setIsSidebarOpen] = useState(() => {
@@ -131,7 +131,7 @@ const toggleSidebar = () => {
               <h1 className="text-lg font-medium text-gray-800">Simple note</h1>
             </div>
             <button
-              onClick={() => setCurrentMemo(null)}
+              onClick={() => setCurrentMemo({})}
               className="p-2 text-gray-500 hover:text-gray-700 hover:bg-gray-100/80 rounded-lg transition-colors flex items-center gap-2"
               title="新規メモ"
             >

@@ -8,7 +8,7 @@ function Sidebar({ isOpen, memos, onEdit, onDelete, onToggle }) {
 
   const handleDeleteSelected = () => {
     if (selectedMemos.length === 0) return;
-    if (window.confirm(`選択した${selectedMemos.length}件のメモを削除してもよろしいですか？`)) {
+    if (window.confirm(`選択した${selectedMemos.length}個のメモを削除してもよろしいですか？`)) {
       selectedMemos.forEach(id => onDelete(id));
       setSelectedMemos([]);
       setIsSelectionMode(false);
@@ -37,7 +37,7 @@ function Sidebar({ isOpen, memos, onEdit, onDelete, onToggle }) {
               <button
                 onClick={() => setIsSelectionMode(!isSelectionMode)}
                 className="p-1.5 text-gray-500 hover:text-gray-700 hover:bg-gray-100 rounded transition-colors"
-                title={isSelectionMode ? "選択を終了" : "選択モード"}
+                title={isSelectionMode ? "選択を完了" : "選択モード"}
               >
                 {isSelectionMode ? (
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
